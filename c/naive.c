@@ -32,11 +32,12 @@ int main() {
 
         if((regnrs[shidx] & (ONE << (IDX_MASK & idx))) > 0) {
             printf("Found duplicate!\n");
-            break;
+            exit(0);
         } else {
             regnrs[shidx] = regnrs[shidx] | (ONE << (IDX_MASK & idx));
         }
     }
+    printf("Nope.\n");
 }
 
 // Assume we have 26 characters. That is the length of the ASCII characters.

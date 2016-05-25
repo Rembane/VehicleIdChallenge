@@ -1,2 +1,2 @@
 all:
-	gcc -g -std=gnu11 -Wall naive.c
+	gcc -O2 -std=gnu11 -Wall naive.c
